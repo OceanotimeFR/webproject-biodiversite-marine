@@ -10,7 +10,7 @@
     <body>
         <header class="site-header">
             <div class="title-div">
-                <h1 id="site-title">AquaSphere</h1>
+                <img src="../img/AquaSphere.png" class="logo"/>
                 <h3 id="site-mission">Préservons la biodiversité marine pour demain</h3>
             </div>
             <div class="h-buttons">
@@ -25,18 +25,33 @@
             <!--Section Carrousel-->
             <section class="content-section" id="section-devd">
                 <div class="carousel">
+                    <input type="radio" name="slide" id="slide1" checked>
+                    <input type="radio" name="slide" id="slide2">
+                    <input type="radio" name="slide" id="slide3">
                     <div class="slides">
                         <div class="slide" id="s1">
-                            <img src="../img/requin_mer.jpg" alt="car-im1"/>
+                            <a href="https://ocean-climate.org/unoc2025-fr/">
+                                <img src="../img/onu_flag.jpg" id="car-im1"/></a>
+                            <div class="slidetext">
+                                Nice devient le cœur de l'océan : sommet planétaire en juin 2025
+                            </div>
                         </div>
                         <div class="slide" id="s2">
-                            <img src="../img/tortue_mer.jpg" alt="car-im2"/>
+                            <a href="https://www.lemonde.fr/idees/article/2024/09/08/le-chalutage-et-l-exploitation-miniere-des-grands-fonds-marins-representent-le-contraire-de-ce-dont-l-ocean-a-besoin_6307217_3232.html">
+                                <img src="../img/deepseamining.jpg" alt="car-im2"/></a>
+                            <div class="slidetext">
+                                Stop au pillage des abysses : vers un moratoire mondial
+                            </div>
                         </div>
                         <div class="slide" id="s3">
-                            <img src="../img/dauphin_mer.jpg" alt="car-im3"/>
+                            <a href="https://www.lemonde.fr/planete/article/2024/11/20/les-recifs-coralliens-se-degradent-rapidement-sous-l-effet-du-rechauffement-climatique_6404695_3244.html">
+                                <img src="../img/dauphin_mer.jpg" alt="car-im3"/></a>
+                            <div class="slidetext">
+                                Récifs en détresse : le SOS silencieux de la Grande Barrière
+                            </div>
                         </div>
                     </div>
-
+                    
                     <div class="nav">
                         <label for="slide1"></label>
                         <label for="slide2"></label>
@@ -67,56 +82,35 @@
                             <p>Maintenir la santé des habitats comme les récifs coralliens, les mangroves et les herbiers marins, essentiels à la vie marine.</p>
                         </div>
                         <div class="enjeux-rectangle" id="enj2">
-                            <img src="../img/pollution_plastique_oceans.jpg" alt="enj-im1"/>
+                            <img src="../img/pollution_plastique_oceans.jpg" alt="enj-im2"/>
                             <h3>Lutte contre la pollution plastique</h3>
                             <p>Réduire l'accumulation des déchets plastiques qui étouffent la faune marine et contaminent la chaîne alimentaire.</p>
                         </div>
                         <div class="enjeux-rectangle" id="enj3">
-                            <img src="../img/chalutier_peche.jpg" alt="enj-im1"/>
+                            <img src="../img/chalutier_peche.jpg" alt="enj-im3"/>
                             <h3>Gestion durable de la pêche</h3>
                             <p>Éviter la surpêche et garantir que les ressources halieutiques restent suffisantes pour les générations futures.</p>
                         </div>
                         <div class="enjeux-rectangle" id="enj4">
-                            <img src="../img/fonte-des-glaciers.jpeg" alt="enj-im1"/>
+                            <img src="../img/fonte-des-glaciers.jpeg" alt="enj-im4"/>
                             <h3>Atténuation des impacts du changement climatique</h3>
                             <p>Protéger les espèces vulnérables face au réchauffement des océans, à l'acidification et à la montée du niveau de la mer.</p>
                         </div>
                         <div class="enjeux-rectangle" id="enj5">
-                            <img src="../img/algues_invasives.jpeg" alt="enj-im1"/>
+                            <img src="../img/algues_invasives.jpeg" alt="enj-im5"/>
                             <h3>Protection contre les espèces invasives</h3>
                             <p>Empêcher l'introduction et la propagation d'espèces non indigènes qui peuvent déséquilibrer les écosystèmes locaux.</p>
                         </div>
                         <div class="enjeux-rectangle" id="enj6">
-                            <img src="../img/sensibilisation_mer.jpg" alt="enj-im1"/>
+                            <img src="../img/sensibilisation_mer.jpg" alt="enj-im6"/>
                             <h3>Sensibilisation et engagement des communautés</h3>
                             <p>Encourager la participation d'acteurs locaux et gouvernementaux pour un effort collectif de conservation.</p>
                         </div>
                     </div>
                 </div>
             </section>
-            
-            <!--Section Actualité-->
-            <h2 class="content-title">Dernières Actualités</h2>
-            <section class="content-section" id="section-actu">
-                <div class="actualités">
-                    <div class="actu-rectangles">
-                        <div class="actu-rect" id="actu-rect1">
-                            <h3>Gouvernance</h3>
-                        </div>
-                        <div class="actu-rect" id="actu-rect2">
-                            <h3>Science</h3>
-                        </div>
-                        <div class="actu-rect" id="actu-rect3">
-                            <h3>En France</h3>
-                        </div>
-                        <div class="actu-rect" id="actu-rect4">
-                            <h3>Menaces</h3>
-                        </div>
-                    </div>
-                </div>
-            </section>     
-
         </main>
+        <script type="text/javascript" src="../js/carrousel.js"></script>
     </body>
     <footer>
         <div>

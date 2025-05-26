@@ -5,13 +5,13 @@
         text-align: justify;
         font-family: 'Quicksand', sans-serif;
         background-color:whitesmoke;
-        --main-bg-color:rgb(80, 138, 227);
+        --main-bg-color:#508ae3;
         --main-txt-color:var(--main-bg-color);
         overflow-y: scroll;
     }
 
     ::selection{
-        background-color: var(--main-bg-color);
+        background-color: rgb(83, 82, 82);
         color:white;
     }
 
@@ -30,14 +30,29 @@
         background-color: var(--main-bg-color);
         padding: 1rem 0;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        position: sticky;
+        position: relative;
         z-index: 100;
+    }
+
+    header{
+        padding-top: 5rem;
+    }
+    
+    .logo{
+        position: absolute;
+        top:0;
+        object-fit: cover;
+        transform: translateY(-33%) translateX(-55%);
+        max-width: 300px;
+        z-index: 101;
     }
 
     #site-title, #site-mission{
         display: flex;
         color:white;
         justify-content: center;
+        position: relative;
+        z-index: 102;
     }
 
     #site-mission{
@@ -52,6 +67,8 @@
         align-items: center;
         width:100%;
         font-size: 16px;
+        position: relative;
+        z-index: 200;
     }
 
     .header-button{
@@ -83,9 +100,10 @@
         font-weight:bolder;
     }
 
+
 /* Carrousel page accueil */
     .carousel{
-        width: 75%;
+        width: 80%;
         height: 350px;
         overflow: hidden;
         border:10px transparent;
@@ -100,10 +118,11 @@
         display: flex;
         width: 100%;
         height: 100%;
-        animation: slide 10s infinite ease-in-out;
+        transition: transform 0.5s ease-in-out
     }
 
     .slide {
+        position: relative;
         flex: 0 0 100%;
         background: #f0f0f0;
         border-right: 1px transparent #ccc;
@@ -114,6 +133,7 @@
         width: 100%;
         height: 350px;
         flex-shrink: 0;
+        overflow: hidden;
     }
 
     .slide img, .enjeux-rectangle img{
@@ -121,21 +141,62 @@
         height: 100%;
         object-fit: cover;
         display: block;
-        image-rendering: auto;
     }
 
-    @keyframes slide {  
-        0%    { transform: translateX(0%); }
-        25%   { transform: translateX(0%); }
-
-        33%   { transform: translateX(-100%); }
-        58%   { transform: translateX(-100%); }
-
-        66%   { transform: translateX(-200%); }
-        91%   { transform: translateX(-200%); }
-
-        100%  { transform: translateX(0%); }
+    .slidetext{
+        position:absolute;
+        top:65%;
+        color:white;
+        background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+        width:100%;
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 3rem;   
     }
+
+    .carousel input[type="radio"]{
+        display: none;
+    }
+
+    #slide1:checked ~ .slides {
+        transform: translateX(0%);
+    }
+    #slide2:checked ~ .slides {
+        transform: translateX(-100%);
+    }
+    #slide3:checked ~ .slides {
+        transform: translateX(-200%);
+    }
+
+    input#slide1:checked ~ .nav label[for="slide1"],
+    input#slide2:checked ~ .nav label[for="slide2"],
+    input#slide3:checked ~ .nav label[for="slide3"] {
+        background-color: #508ae3;
+    }
+
+    .nav{
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 10px;
+        z-index: 10;
+    }
+
+    .nav label {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #ccc;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .nav label:hover {
+        opacity: 1;
+    }
+
 
 /* Enjeux */
     .enjeux-rectangles, .actu-rectangles{
@@ -146,6 +207,7 @@
         align-items: center;
         width:100%;
         transition: scale 0.8s ease-in-out;
+        margin-bottom: 2rem;
     }
 
     .enjeux-rectangle, .actu-rect{
@@ -188,16 +250,6 @@
 
     .enjeux-rectangle:hover, .actu-rect:hover{
         transform: scale(105%);
-    }
-
-
-/* Actu */
-    .actualités, .enjeux{
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-    .actu-rect{
-        width:750px;
     }
 
 
