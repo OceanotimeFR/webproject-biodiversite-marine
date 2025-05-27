@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ma première page web</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #c7dbf2;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button id="boutonmenu" on-click="toggleMenu()">Menu</button>
+    </header>
+    <header>
+        <h1><a href="">Bienvenue sur ma page web</a></h1>
+    </header>
+
+    <section class="imagegauche agrandissable">
+        <div class="interieur">
+            <img src="https://via.placeholder.com/600x300" alt="Image de présentation">
+            <div class="texte">
+                <h2>Section 1 : Présentation</h2>
+                <p>Voici un petit texte pour me présenter. Je suis passionné par le web et j'apprends le HTML.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="imagedroite agrandissable">
+        <div class="interieur">
+            <img src="https://via.placeholder.com/600x300?text=Photo+exemple" alt="Exemple d'image">
+            <div class="texte">
+                <h2>Section 2 : Mes centres d'intérêt</h2>
+                <p>J'aime la programmation, les jeux vidéo et la photographie.</p>
+            </div>
+        </div>
+    </section>
+        <section class="imagegauche agrandissable">
+        <div class="interieur">
+            <img src="https://via.placeholder.com/600x300" alt="Image de présentation">
+            <div class="texte">
+                <h2>Section 3 : Présentation</h2>
+                <p>Voici un petit texte pour me présenter. Je suis passionné par le web et j'apprends le HTML.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="imagedroite agrandissable">
+        <div class="interieur">
+            <img src="https://via.placeholder.com/600x300?text=Photo+exemple" alt="Exemple d'image">
+            <div class="texte">
+                <h2>Section 4 : Mes centres d'intérêt</h2>
+                <p>J'aime la programmation, les jeux vidéo et la photographie.</p>
+            </div>
+        </div>
+    </section>
+    <script src="../jscript/script.js"></script>
+</body>
+</html>
