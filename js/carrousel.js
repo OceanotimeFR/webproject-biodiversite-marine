@@ -11,12 +11,12 @@ const nextSlide = () => {
   goToSlide(currentSlide);
 }
 
-let interval = setInterval(nextSlide, 5000); // change toutes les 5s
+let interval = setInterval(nextSlide, 5000); 
 
 document.querySelectorAll('input[name="slide"]').forEach((input, index) => {
   input.addEventListener('change', () => {
     currentSlide = index + 1;
-    clearInterval(interval); // stop auto défilement temporairement
-    interval = setInterval(nextSlide, 5000); // relance
+    clearInterval(interval); 
+    interval = setInterval(nextSlide, 5000); 
   });
 });

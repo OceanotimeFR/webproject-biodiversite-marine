@@ -15,6 +15,7 @@
             </div>
             <div class="h-buttons">
                 <nav>
+                    <a href="./accueil.html" class="header-button" id="b0">Accueil</a>
                     <a href="./carte.html" class="header-button" id="b1">Carte</a>
                     <a href="./annuaire.html" class="header-button" id="b2">Annuaire</a>
                     <a href="./reseau.html" class="header-button" id="b3">Réseau</a>
@@ -30,22 +31,23 @@
                     <input type="radio" name="slide" id="slide3">
                     <div class="slides">
                         <div class="slide" id="s1">
-                            <a href="https://ocean-climate.org/unoc2025-fr/">
-                                <img src="../img/onu_flag.jpg" id="car-im1"/></a>
+                            <a href="https://ocean-climate.org/unoc2025-fr/" onclick="website_link_alert()">
+                                <img src="../img/onu_flag.jpg" id="car-im1"/>
+                            </a>
                             <div class="slidetext">
                                 Nice devient le cœur de l'océan : sommet planétaire en juin 2025
                             </div>
                         </div>
                         <div class="slide" id="s2">
                             <a href="https://www.lemonde.fr/idees/article/2024/09/08/le-chalutage-et-l-exploitation-miniere-des-grands-fonds-marins-representent-le-contraire-de-ce-dont-l-ocean-a-besoin_6307217_3232.html">
-                                <img src="../img/deepseamining.jpg" alt="car-im2"/></a>
+                                <img src="../img/deepseamining.jpg" alt="car-im2" onclick="website_link_alert()"/></a>
                             <div class="slidetext">
                                 Stop au pillage des abysses : vers un moratoire mondial
                             </div>
                         </div>
                         <div class="slide" id="s3">
                             <a href="https://www.lemonde.fr/planete/article/2024/11/20/les-recifs-coralliens-se-degradent-rapidement-sous-l-effet-du-rechauffement-climatique_6404695_3244.html">
-                                <img src="../img/dauphin_mer.jpg" alt="car-im3"/></a>
+                                <img src="../img/dauphin_mer.jpg" alt="car-im3" onclick="website_link_alert()"/></a>
                             <div class="slidetext">
                                 Récifs en détresse : le SOS silencieux de la Grande Barrière
                             </div>
@@ -111,6 +113,7 @@
             </section>
         </main>
         <script type="text/javascript" src="../js/carrousel.js"></script>
+        <script type="text/javascript" src="../js/alerts.js"></script>
     </body>
     <footer>
         <div>
