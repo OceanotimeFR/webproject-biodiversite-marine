@@ -1,5 +1,5 @@
 @media screen {
-/* ROOT / :: */
+/* ROOT | :: */
     :root{
         line-height: 1.6;
         text-align: justify;
@@ -25,7 +25,7 @@
     }
 
 
-/* Header / Footer */
+/* Header | Footer */
     header, footer{
         background-color: var(--main-bg-color);
         padding: 1rem 0;
@@ -33,7 +33,6 @@
         position: relative;
         z-index: 100;
     }
-
     header{
         padding-top: 5rem;
     }
@@ -91,7 +90,6 @@
     footer, footer a{
         color:white;
         position:static;
-        margin:0px;
         text-decoration: none;
     }
 
@@ -198,8 +196,8 @@
     }
 
 
-/* Enjeux */
-    .enjeux-rectangles{
+/* Enjeux | Innovations */
+    .enjeux-rectangles, .innovations-rectangles{
         display: flex;
         flex-wrap: wrap;
         gap:1rem;
@@ -208,9 +206,10 @@
         width:100%;
         transition: transform 0.8s ease-in-out;
         margin-bottom: 2rem;
+        
     }
 
-    .enjeux-rectangle{
+    .enjeux-rectangle, .innovations-rectangle{
         width:500px;
         height:320px;
         margin-left:15px;
@@ -218,11 +217,17 @@
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         border-radius: 10px;
         transition: transform 0.2s ease-in-out;
+        overflow: hidden;
+        position:relative;
+        z-index: 101;
     }
 
-    .enjeux-rectangle img{
+    .enjeux-rectangle img, .innovations-rectangle img{
+        width: 100%;
         height:65%;
         border-radius: 10px 10px 0 0;
+        object-fit: cover;
+        display: block;
         overflow: hidden;
     }
 
@@ -236,7 +241,7 @@
         margin-top: 50px;
     }
 
-    .enjeux-rectangle h3{
+    .enjeux-rectangle h3, .innovations-rectangle h3{
         background-color: var(--main-bg-color);
         color:whitesmoke;
         border-radius: 0 0 10px 10px;
@@ -249,13 +254,55 @@
         font-style: italic;
     }
 
-    .enjeux-rectangle:hover{
+    .enjeux-rectangle:hover, .innovations-rectangle:hover{
         transform: scale(1.05);
     }
 
+/* Innovations */
+    
+    .innovations-rectangle{
+        width:45%;
+    }
 
 /* Contenu */
     .content-section{
         padding-left:5px;
+    }
+
+/* Carte */
+    #legende-carte {
+        display: flex;
+        position: relative;
+        background-color: white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 500;
+        width:250px;
+        height: 150px;
+        margin: 0;
+        top:490px;
+        left:15px;
+    }
+
+    /* Supprime totalement le fond et les bordures du popup */
+    .leaflet-popup.no-background-popup .leaflet-popup-content-wrapper {
+        background: transparent !important;
+        box-shadow: none !important;
+        border: none !important;
+    }
+
+    /* Supprime la flèche en bas du popup */
+    .leaflet-popup.no-background-popup .leaflet-popup-tip-container {
+        display: none !important;
+    }
+    
+    .leaflet-popup.no-background-popup .leaflet-popup-close-button {
+        color: white !important;       
+        font-weight: bold;
+        font-size: 20px;
+        text-shadow: 0 0 5px black;    
+    }
+
+    .leaflet-popup-close-button {  
+        transform: translate(-30px, 15px);
     }
 }

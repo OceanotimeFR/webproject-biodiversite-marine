@@ -11,28 +11,31 @@
     <body>
         <header class="site-header">
             <div class="title-div">
-                <img src="../img/AquaSphere.png" class="logo"/>
+                <img src="../data/img/AquaSphere.png" class="logo"/>
                 <h3 id="site-mission">Préservons la biodiversité marine pour demain</h3>
             </div>
             <div class="h-buttons">
                 <nav>
                     <a href="./accueil.html" class="header-button" id="b0">Accueil</a>
                     <a href="./carte.html" class="header-button" id="b1">Carte</a>
-                    <a href="./annuaire.html" class="header-button" id="b2">Annuaire</a>
+                    <a href="./annuaire.html" class="header-button" id="b2">Innovations</a>
                     <a href="./reseau.html" class="header-button" id="b3">Réseau</a>
+                    <a href="./enlist.html" class="header-button" id="b4">Nous soutenir</a>
                 </nav>
             </div>
         </header>
         <main>
             <section class="main-map">
-                <div id="map"></div>
+                <div id="map">
                 <style>
                     #map{
-                        height:450px;
-                        width:95%;
+                        width:100%;
+                        height:68.25vh;
                         margin-left: auto;
                         margin-right: auto;
+                        position: relative;
                         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+                        z-index:100;
                     }
                 </style>
             </section>
@@ -53,21 +56,45 @@
     var bounds = L.latLngBounds(southWest, northEast);
     map.setMaxBounds(bounds);
 
-    var zonesImportantes = [
-        {nom: "Grande Barrière de Corail", coords: [-18.2871, 147.6992], description: "Plus grand récif corallien du monde"},
-        {nom: "Parc national marin de Tubbataha", coords: [8.9490, 119.9110], description: "Réserve naturelle avec récifs coralliens"},
-        {nom: "Sanctuaire marin de Papahānaumokuākea", coords: [25.7460, -166.5608], description: "L’une des plus grandes zones marines protégées"},
-        {nom: "Parc marin de la Mer Rouge", coords: [22.0000, 38.5000], description: "Récifs coralliens riches en biodiversité"},
-        {nom: "Réserve naturelle des Galápagos", coords: [-0.9538, -90.9656], description: "Espèces uniques et fragiles"},
-        {nom: "Zone marine protégée des îles Phoenix", coords: [-3.5933, -170.9639], description: "Grande diversité d’espèces marines"},
-        {nom: "Parc marin de la baie de Monterey", coords: [36.6002, -121.8947], description: "Abondance de mammifères marins et oiseaux"},
-        {nom: "Parc national marin de Belize", coords: [17.9000, -87.7500], description: "Récifs coralliens, mangroves, herbiers marins"}
+    var zonesImportantes = [ // 8 zones
+        {nom: "Grande Barrière de Corail", coords: [-18.2871, 147.6992], description: "Plus grand récif corallien du monde", image:"https://odysseedelaterre.fr/wp-content/uploads/2021/09/grande-barriere-corail-australie.jpg"},
+        {nom: "Parc national marin de Tubbataha", coords: [8.9490, 119.9110], description: "Réserve naturelle avec récifs coralliens", image:"https://whc.unesco.org/uploads/thumbs/site_0653_0001-1200-630-20151105151756.jpg"},
+        {nom: "Sanctuaire marin de Papahānaumokuākea", coords: [25.7460, -166.5608], description: "L’une des plus grandes zones marines protégées", image:"https://upload.wikimedia.org/wikipedia/commons/8/84/Albatross_birds_at_Northwest_Hawaiian_Islands_National_Monument%2C_Midway_Atoll%2C_2007March01.jpg"},
+        {nom: "Parc marin de la Mer Rouge", coords: [22.0000, 38.5000], description: "Récifs coralliens riches en biodiversité", image:"https://assets.evcdn.net/pim-assets-images/81820/61dff92489ba2.jpeg"},
+        {nom: "Réserve naturelle des Galápagos", coords: [-0.9538, -90.9656], description: "Espèces uniques et fragiles", image:"https://upload.wikimedia.org/wikipedia/commons/c/cd/Cerro_Dragon_1.jpg"},
+        {nom: "Zone marine protégée des îles Phoenix", coords: [-3.5933, -170.9639], description: "Grande diversité d’espèces marines", image:"https://lh3.googleusercontent.com/uxFypl5Gmjzq7RSs_kHoDV2MbSTCuiAXFXUG3fO7Np_a9bWDzJsHqiDLBOERKPchWqfAX7jXhvldnfJ1IBa6EGAVG5Ebz4wWAVIoASeqnl0pYsaPgJ30HX0MxG2SX4Y-Cchdbv9X"},
+        {nom: "Parc marin de la baie de Monterey", coords: [36.6002, -121.8947], description: "Abondance de mammifères marins et oiseaux", image:"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/69/96/18/giant-kelp-forests-and.jpg?w=1200&h=-1&s=1"},
+        {nom: "Parc national marin de Belize", coords: [17.9000, -87.7500], description: "Récifs coralliens, mangroves, herbiers marins", image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbZ0pksnv-y8aEfGOm9hmBmVDvMSk8zce8rA&s"}
     ];
 
-    zonesImportantes.forEach(function(zone) {
-        L.marker(zone.coords).addTo(map)
-        .bindPopup("<b>" + zone.nom + "</b><br>" + zone.description);
+zonesImportantes.forEach(function(zone) {
+    L.marker(zone.coords).addTo(map)
+    .bindPopup(`
+        <div class="popup-content" style="
+            width: 240px;
+            height: 120px;
+            background-image: url('${zone.image}');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: flex-end;
+            border-radius: 8px;
+            overflow: hidden;
+        ">
+            <div style="
+                background: linear-gradient(to top, rgba(0,0,0,1) 10%, rgba(0,0,0,0) 100%);
+                color: white;
+                width: 100%;
+                text-align: center;
+                padding: 5px;
+            ">
+                <b>${zone.nom}</b><br>${zone.description}
+            </div>
+        </div>
+    `, {
+        className: 'no-background-popup'
     });
+});
 
     </script>
 

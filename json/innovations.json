@@ -1,0 +1,56 @@
+[
+  {
+    "Nom": "Global Fishing Watch",
+    "Détail": "Surveillance en temps réel de la pêche via satellite",
+    "Auteur": "SkyTruth, Google, Oceana",
+    "Organisation": "Partenariat ONG + Google",
+    "Date": "2016",
+    "Objectif": "Lutter contre la pêche illégale",
+    "Img":"https://globalfishingwatch.org/wp-content/uploads/high_res.webp"
+  },
+  {
+    "Nom": "Ocean Farm 1",
+    "Détail": "Ferme aquacole offshore pour saumons",
+    "Auteur": "SalMar",
+    "Organisation": "SalMar ASA (Norvège)",
+    "Date": "2017",
+    "Objectif": "Aquaculture durable en mer",
+    "Img":"https://vestnesnorway.com/wp-content/uploads/2022/03/SalMar1.jpg"
+  },
+  {
+    "Nom": "Plastic2Oil",
+    "Détail": "Conversion de déchets plastiques en carburant",
+    "Auteur": "John Bordynuik",
+    "Organisation": "JBI Inc.",
+    "Date": "2009",
+    "Objectif": "Réduire la pollution plastique et produire de l’énergie",
+    "Img":"https://assets.newatlas.com/dims4/default/dbe8207/2147483647/strip/true/crop/1114x835+0+0/resize/1114x835!/format/webp/quality/90/?url=http%3A%2F%2Fnewatlas-brightspot.s3.amazonaws.com%2Farchive%2Fplastic2oil-2.jpg"
+  },
+  {
+    "Nom": "Bioplastiques à base d’algues",
+    "Détail": "Biopolymères issus d’algues pour remplacer le plastique",
+    "Auteur": "Algopack",
+    "Organisation": "Algopack (France)",
+    "Date": "Depuis 2010",
+    "Objectif": "Matériaux biodégradables pour réduire les déchets",
+    "Img":"https://madeinmarseille.net/actualites-marseille/eranova-entreprise-bassin-algue-bioplastque.jpg"
+  },
+  {
+    "Nom": "The Ocean Cleanup",
+    "Détail": "Systèmes flottants pour collecter les plastiques en mer",
+    "Auteur": "Boyan Slat",
+    "Organisation": "The Ocean Cleanup",
+    "Date": "Depuis 2013",
+    "Objectif": "Nettoyage des gyres océaniques",
+    "Img":"https://assets.theoceancleanup.com/videos/home-header-poster-v2.jpg"
+  },
+  {
+    "Nom": "Reef Restoration Foundation",
+    "Détail": "Programme de repousse de coraux sur structures artificielles",
+    "Auteur": "Reef Restoration Foundation",
+    "Organisation": "ONG Australienne",
+    "Date": "2018",
+    "Objectif": "Restauration des récifs coralliens",
+    "Img":"https://www.sportfishingmag.com/uploads/2021/09/spf0219-coralrestoration.jpg"
+  }
+]
