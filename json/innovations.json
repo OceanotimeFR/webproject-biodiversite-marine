@@ -2,55 +2,61 @@
   {
     "Nom": "Global Fishing Watch",
     "Détail": "Surveillance en temps réel de la pêche via satellite",
-    "Auteur": "SkyTruth, Google, Oceana",
-    "Organisation": "Partenariat ONG + Google",
-    "Date": "2016",
-    "Objectif": "Lutter contre la pêche illégale",
-    "Img":"https://globalfishingwatch.org/wp-content/uploads/high_res.webp"
+    "Auteur": "Global Fishing Watch a été développé conjointement par SkyTruth, Google et Oceana, trois entités engagées dans des domaines distincts mais convergents : la protection de l’environnement, l’innovation technologique et la défense de la biodiversité marine. Ce trio de partenaires a permis de mettre en place une plateforme fiable et novatrice, accessible au plus grand nombre.",
+    "Organisation": "Ce projet ambitieux est né d’un partenariat unique entre des acteurs issus de sphères très différentes mais complémentaires. D’un côté, SkyTruth, une ONG spécialisée dans l’analyse des images satellites à des fins environnementales ; de l’autre, Oceana, organisation de défense des océans ; et enfin Google, avec sa puissance technologique et ses ressources en matière de traitement de données à grande échelle. Ensemble, ils ont uni leurs forces pour rendre l’activité de pêche plus transparente à l’échelle mondiale.",
+    "Date": "Le projet Global Fishing Watch a vu le jour en 2016, à une époque où la demande de transparence dans les activités maritimes et la lutte contre la pêche illégale devenaient des priorités mondiales. Cette date marque le début d’une nouvelle ère dans l’utilisation des technologies satellitaires pour la préservation des océans, en rendant les données maritimes accessibles au grand public et aux décideurs.",
+    "Objectif": "L’objectif principal de Global Fishing Watch est de combattre la pêche illégale, non déclarée et non réglementée (INN), qui représente une menace majeure pour les écosystèmes marins, la sécurité alimentaire mondiale et les économies côtières. En rendant visibles les mouvements des navires de pêche en temps réel grâce aux données AIS, la plateforme permet une meilleure surveillance des zones de pêche, encourage la responsabilisation des acteurs du secteur et facilite l’action des autorités et des ONG.",
+    "Img": "../data/img/innovations/gfwatch.jpeg",
+    "para": "Global Fishing Watch est une plateforme de surveillance en temps réel des activités de pêche à l’échelle mondiale. Créée en partenariat entre SkyTruth, Google et Oceana, cette initiative utilise les données satellites AIS pour suivre les mouvements des navires de pêche et identifier les comportements suspects. L’objectif est de lutter contre la pêche illégale, non déclarée et non réglementée (INN), en rendant les activités en mer plus transparentes et accessibles au public, aux chercheurs et aux gouvernements."
   },
   {
     "Nom": "Ocean Farm 1",
     "Détail": "Ferme aquacole offshore pour saumons",
-    "Auteur": "SalMar",
-    "Organisation": "SalMar ASA (Norvège)",
-    "Date": "2017",
-    "Objectif": "Aquaculture durable en mer",
-    "Img":"https://vestnesnorway.com/wp-content/uploads/2022/03/SalMar1.jpg"
+    "Auteur": "Ocean Farm 1 a été imaginé et développé par SalMar, une société norvégienne qui s’est imposée comme un acteur majeur de l’aquaculture mondiale. À travers ce projet, l’entreprise affirme sa volonté d’innover dans un secteur en mutation, en proposant des solutions concrètes aux défis de l’élevage en mer profonde tout en répondant aux exigences environnementales croissantes.",
+    "Organisation": "Le projet est piloté par SalMar ASA, une entreprise norvégienne pionnière dans le domaine de l’élevage de saumons. Forte d’une expérience approfondie dans l’aquaculture, SalMar a conçu cette ferme flottante comme un modèle d’innovation alliant robotique, intelligence artificielle et respect de l’environnement marin.",
+    "Date": "Mise à l’eau en 2017, Ocean Farm 1 représente une étape clé dans l’évolution de l’aquaculture vers des pratiques plus durables. Cette date marque le début d’une nouvelle génération d’installations offshore qui combinent innovation technologique et respect de l’environnement marin.",
+    "Objectif": "L’objectif fondamental de ce projet est de réinventer l’aquaculture en mer en s’éloignant des fermes côtières classiques souvent critiquées pour leur impact écologique. Ocean Farm 1 entend prouver qu’il est possible d’élever des saumons dans un environnement plus naturel et mieux régulé, avec un souci constant de la durabilité écologique, de la santé des poissons et de l'efficacité économique.",
+    "Img": "../data/img/innovations/SalMar1.jpg",
+    "para": "Ocean Farm 1, développée par SalMar ASA en Norvège, est l’une des premières fermes aquacoles offshore entièrement automatisées. Installée en pleine mer, cette structure flottante géante permet l’élevage de saumons dans un environnement plus naturel, avec moins d’impact sur les côtes. Grâce à des capteurs et à un système de gestion intelligente, l’élevage est optimisé en termes de santé des poissons et de durabilité environnementale."
   },
   {
     "Nom": "Plastic2Oil",
     "Détail": "Conversion de déchets plastiques en carburant",
-    "Auteur": "John Bordynuik",
-    "Organisation": "JBI Inc.",
-    "Date": "2009",
-    "Objectif": "Réduire la pollution plastique et produire de l’énergie",
-    "Img":"https://assets.newatlas.com/dims4/default/dbe8207/2147483647/strip/true/crop/1114x835+0+0/resize/1114x835!/format/webp/quality/90/?url=http%3A%2F%2Fnewatlas-brightspot.s3.amazonaws.com%2Farchive%2Fplastic2oil-2.jpg"
+    "Auteur": "Plastic2Oil est le fruit de l’ingéniosité de John Bordynuik, un inventeur et entrepreneur canadien à la tête de l’entreprise JBI Inc. À travers ce projet, Bordynuik a cherché à transformer un problème majeur – les déchets plastiques – en une ressource énergétique, en s’appuyant sur une technologie de conversion innovante.",
+    "Organisation": "Le développement de Plastic2Oil a été pris en charge par JBI Inc., une entreprise nord-américaine axée sur les technologies de recyclage et d’énergie alternative. L’organisation repose sur une vision pragmatique de l’économie circulaire, visant à valoriser les déchets plastiques non recyclables à travers des procédés industriels efficaces.",
+    "Date": "La technologie Plastic2Oil a été présentée pour la première fois en 2009, à une période où la conscience environnementale autour des déchets plastiques commençait à gagner en importance. Cette date marque un tournant dans la manière de considérer les plastiques comme une matière première potentielle plutôt que comme un simple rebut.",
+    "Objectif": "L’objectif de Plastic2Oil est double : d’une part, réduire la quantité de déchets plastiques qui finissent dans les décharges ou dans la nature ; d’autre part, produire un carburant alternatif, réutilisable et moins dépendant des sources fossiles traditionnelles. En bouclant cette boucle vertueuse, le projet entend contribuer à une économie plus circulaire et durable.",
+    "Img": "../data/img/innovations/p2o.jpeg",
+    "para": "Plastic2Oil est une technologie développée par John Bordynuik via l’entreprise JBI Inc., qui permet de convertir les déchets plastiques non recyclables en carburant liquide. Le procédé utilise une pyrolyse catalytique pour transformer les plastiques en différents types d’hydrocarbures. Cette innovation vise à réduire la quantité de plastique enfouie ou rejetée dans la nature tout en produisant de l’énergie utilisable, bouclant ainsi une économie circulaire."
   },
   {
-    "Nom": "Bioplastiques à base d’algues",
+    "Nom": "Bioplastiques a base d'algues",
     "Détail": "Biopolymères issus d’algues pour remplacer le plastique",
-    "Auteur": "Algopack",
-    "Organisation": "Algopack (France)",
-    "Date": "Depuis 2010",
-    "Objectif": "Matériaux biodégradables pour réduire les déchets",
-    "Img":"https://madeinmarseille.net/actualites-marseille/eranova-entreprise-bassin-algue-bioplastque.jpg"
+    "Auteur": "L’entreprise Algopack, fondée en France, est à l’origine de cette innovation. Spécialisée dans la valorisation des algues, elle a su mettre au point une solution de remplacement aux plastiques issus de la pétrochimie, en intégrant pleinement les enjeux environnementaux dans sa démarche de conception.",
+    "Organisation": "Algopack est une société française spécialisée dans la création de biopolymères issus d’algues brunes. Elle repose sur une organisation agile, alliant recherche scientifique, développement industriel et engagement écologique, dans le but de proposer des matériaux alternatifs à faible impact carbone, compostables et biodégradables.",
+    "Date": "Le projet a été lancé en 2010, à un moment où l’attention mondiale se tournait de plus en plus vers les alternatives durables aux matières plastiques traditionnelles. Cette date marque le début d’une aventure industrielle à la croisée des innovations en biomatériaux et des exigences écologiques.",
+    "Objectif": "L’objectif de ces bioplastiques est clair : remplacer les plastiques à base de pétrole par des matériaux plus respectueux de l’environnement, biodégradables, compostables et sans toxicité. En utilisant les algues comme ressource renouvelable et non concurrente des cultures alimentaires, Algopack vise à réduire significativement l’impact des déchets plastiques sur la planète.",
+    "Img": "../data/img/innovations/bioplastq.jpg",
+    "para": "L’entreprise française Algopack développe des bioplastiques à base d’algues pour remplacer les plastiques issus du pétrole. Les algues, abondantes et rapidement renouvelables, sont transformées en biopolymères compostables, biodégradables et non toxiques. Ce matériau peut être utilisé pour des emballages, des objets du quotidien ou des pièces industrielles, tout en contribuant à la réduction des déchets plastiques."
   },
   {
     "Nom": "The Ocean Cleanup",
     "Détail": "Systèmes flottants pour collecter les plastiques en mer",
-    "Auteur": "Boyan Slat",
-    "Organisation": "The Ocean Cleanup",
-    "Date": "Depuis 2013",
-    "Objectif": "Nettoyage des gyres océaniques",
-    "Img":"https://assets.theoceancleanup.com/videos/home-header-poster-v2.jpg"
+    "Auteur": "The Ocean Cleanup a été fondée par Boyan Slat, un jeune ingénieur néerlandais qui, dès l’adolescence, s’est intéressé à la pollution plastique des océans. Son ambition visionnaire l’a conduit à concevoir un système unique pour s’attaquer à l’un des problèmes environnementaux les plus urgents.",
+    "Organisation": "L’organisation derrière cette initiative est The Ocean Cleanup, une fondation à but non lucratif basée aux Pays-Bas. Composée d’ingénieurs, de scientifiques et de communicants, elle travaille sur des technologies innovantes pour nettoyer les océans, tout en sensibilisant le public à l’ampleur de la pollution plastique.",
+    "Date": "Lancé officiellement en 2013, The Ocean Cleanup est devenu en quelques années l’un des projets les plus emblématiques en matière de dépollution marine. Cette date marque le passage d’une idée portée par un adolescent à une entreprise mondiale soutenue par des milliers de contributeurs.",
+    "Objectif": "L’objectif de The Ocean Cleanup est ambitieux : éliminer les déchets plastiques accumulés dans les gyres océaniques, ces gigantesques vortex marins où s’accumulent des millions de tonnes de plastique. En développant des dispositifs flottants passifs capables de collecter ces déchets sans endommager la faune marine, le projet entend restaurer les écosystèmes océaniques à grande échelle.",
+    "Img": "../data/img/innovations/ocleanp.jpg",
+    "para": "L’initiative The Ocean Cleanup, fondée par Boyan Slat, conçoit des systèmes flottants autonomes capables de collecter les déchets plastiques à la surface des océans, notamment dans les gyres comme celui du Pacifique Nord. Le projet combine des bras flottants et des filets passifs qui captent les déchets grâce au courant. Une fois les plastiques récupérés, ils sont acheminés à terre pour être recyclés."
   },
   {
     "Nom": "Reef Restoration Foundation",
     "Détail": "Programme de repousse de coraux sur structures artificielles",
-    "Auteur": "Reef Restoration Foundation",
-    "Organisation": "ONG Australienne",
-    "Date": "2018",
-    "Objectif": "Restauration des récifs coralliens",
-    "Img":"https://www.sportfishingmag.com/uploads/2021/09/spf0219-coralrestoration.jpg"
+    "Auteur": "La Reef Restoration Foundation est une ONG australienne composée de biologistes marins, de plongeurs et de bénévoles passionnés par la protection des récifs. Fondée par des experts locaux, elle s’est donné pour mission de restaurer la santé des récifs coralliens grâce à des méthodes actives de replantation.",
+    "Organisation": "Cette organisation à but non lucratif opère principalement sur la Grande Barrière de Corail, en collaboration avec des instituts de recherche, des entreprises privées et des agences gouvernementales. Elle est structurée autour de programmes de régénération ciblés, utilisant des structures métalliques et des coraux issus de pépinières marines.",
+    "Date": "Fondée en 2018, Reef Restoration Foundation est née d’un constat alarmant sur l’état de la Grande Barrière de Corail, particulièrement menacée par le blanchissement et le réchauffement climatique. Cette date marque un engagement concret pour inverser le déclin des récifs grâce à l’action humaine et à l’innovation écologique.",
+    "Objectif": "L’objectif de l’organisation est de restaurer les récifs coralliens dégradés, en replantant des coraux cultivés sur des structures artificielles, dans le but de reconstruire des habitats marins complexes. En favorisant la biodiversité et la résilience écologique, le programme espère contrer les effets du changement climatique sur les écosystèmes marins fragiles.",
+    "Img": "../data/img/innovations/coresto.jpg",
+    "para": "Reef Restoration Foundation est une ONG australienne qui mène des programmes de replantation de coraux sur la Grande Barrière de Corail. Des fragments de coraux sont cultivés sur des structures métalliques, puis transplantés sur des zones dégradées afin de régénérer l’écosystème récifal. Cette méthode contribue à renforcer la résilience des récifs face au blanchissement et aux changements climatiques."
   }
 ]

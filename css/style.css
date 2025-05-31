@@ -259,9 +259,8 @@
     }
 
 /* Innovations */
-    
     .innovations-rectangle{
-        width:45%;
+        width:750px;
     }
 
 /* Contenu */
@@ -283,14 +282,12 @@
         left:15px;
     }
 
-    /* Supprime totalement le fond et les bordures du popup */
     .leaflet-popup.no-background-popup .leaflet-popup-content-wrapper {
         background: transparent !important;
         box-shadow: none !important;
         border: none !important;
     }
 
-    /* Supprime la flèche en bas du popup */
     .leaflet-popup.no-background-popup .leaflet-popup-tip-container {
         display: none !important;
     }
