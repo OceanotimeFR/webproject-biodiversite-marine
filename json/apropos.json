@@ -1,0 +1,12 @@
+[
+    {
+        "name":"Arnaud",
+        "status":"Fondateur",
+        "desc":"Co-fondateur et développeur engagé, Arnaud allie technologie et cause environnementale. Il conçoit et gère la plateforme pour qu’elle serve efficacement les missions de conservation et d'éducation."
+    },
+    {
+        "name":"David",
+        "status":"Fondateur",
+        "desc":"Développeur engagé et amoureux des océans, David met la technologie au service de la nature. Il est responsable du développement du site et s’assure que la plateforme soit accessible, intuitive et impactante"
+    }
+]

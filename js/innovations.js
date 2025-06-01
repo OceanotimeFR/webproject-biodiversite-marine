@@ -125,7 +125,6 @@ function explainInnovations(page) {
 
 
     divPage.appendChild(divLogo);
-    //divPage.appendChild(divHeader);
     divPage.appendChild(divP1);
     divPage.appendChild(divP3);
     divPage.appendChild(divP5);

@@ -25,7 +25,76 @@
             </div>
         </header>
         <main>
-            
+            <style>
+                fieldset {
+                    margin: 1rem;
+                    border: none;
+                    border-left: 6px solid var(--main-txt-color);
+                    border-right: 6px solid var(--main-txt-color);
+                }
+                fieldset legend {
+                    font-size:25px;
+                    font-weight: bold;
+                }
+                fieldset div {
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding: 1rem;
+                }
+                fieldset input{
+                    border:none;
+                    border-radius: 10px;
+                    background-color: rgb(203, 210, 229);
+                    padding:5px;
+                }
+                #submitButton{
+                    background-color: var(--main-txt-color);
+                    border: none;
+                    border-radius: 10px;
+                    width:15%;
+                    height:30px;
+                    color:white;
+                }
+                #submitButton:hover{
+                    background-color: #91b3e5;
+                    cursor: pointer;
+                    color:black;
+                }
+                fieldset input[type="checkbox"]{
+                    width: 15px;
+                    height: 15px;
+                }
+            </style>
+            <fieldset>
+                <legend>Vos informations</legend>
+                <section class="survey">
+                    <div>
+                        <label>Nom :</label>
+                        <input type="text" name="Nom" required/>
+                    </div>
+                    <div>
+                        <label>Prénom :</label>
+                        <input type="text" name="Prénom" required/>
+                    </div>
+                    <div>
+                        <label>Mail :</label>
+                        <input type="email" name="Mail" required/>
+                    </div>
+                    <div>
+                        <label>Souhaitez-vous être recontacté ? :</label>
+                        <input type="checkbox" name="contact" required/>
+                        <span class="checkmark"></span>
+                    </div>
+                    <div>
+                        <label>Souhaitez-vous faire une donation ?</label>
+                        <input type="checkbox" name="don" required/>
+                        <span class="checkmark"></span>
+                    </div>
+                    
+                    <button type="submit" id="submitButton">Envoyer</button>
+
+                </section>
+            </fieldset>
         </main>
     </body>
     <footer>

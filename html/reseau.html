@@ -25,8 +25,55 @@
             </div>
         </header>
         <main>
-            
+            <style>
+                #section-network{
+                    padding-top: 2rem;
+                }
+
+                .network-rectangles {
+                    display: flex;
+                    flex-wrap: wrap; 
+                    gap: 20px; 
+                    justify-content: center; 
+                    align-items: flex-start; 
+                }
+
+                .network-rectangle{
+                    position: relative;
+                    overflow:hidden;
+                    z-index: 100;
+                }
+
+                .network-rectangle .tooltip {
+                    position: fixed;        
+                    background-color: #333;    
+                    border-left: 6px solid var(--main-txt-color);
+                    color: white;            
+                    padding: 8px;
+                    border-radius: 5px;
+                    font-size: 0.9rem;
+                    width: auto;    
+                    height:auto;      
+                    opacity: 0;                 
+                    pointer-events: none;    
+                    transition: opacity 0.3s ease;
+                    white-space: pre-line;     
+                    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+                    z-index: 1000;
+                }
+
+                .network-rectangle:hover .tooltip {
+                    opacity: 1;                 
+                    pointer-events: auto;      
+                }
+
+            </style>
+            <section id="section-network">
+                <div class="network-rectangles"></div>
+            </section>
         </main>
+        <script type="text/javascript" src="../js/network.js"></script>
+        <script type="text/javascript" src="../js/alerts.js"></script>
     </body>
     <footer>
         <div>
