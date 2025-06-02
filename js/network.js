@@ -34,6 +34,8 @@ function fetchJSON() {
 
                 const blockLink = document.createElement("a");
                 blockLink.href = netwk.website;
+                blockLink.target = "_blank"; 
+                blockLink.rel = "noopener noreferrer"; 
                 blockLink.onclick = () => website_link_alert();
                 blockLink.style.textDecoration = "none";
                 blockLink.style.color="var(--main-txt-color)";

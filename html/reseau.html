@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>AquaSphere - Accueil</title>
+        <title>AquaSphere - Réseau</title>
         <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../css/style.css"/>
         <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
@@ -18,12 +18,16 @@
                 <nav>
                     <a href="./accueil.html" class="header-button" id="b0">Accueil</a>
                     <a href="./carte.html" class="header-button" id="b1">Carte</a>
-                    <a href="./annuaire.html" class="header-button" id="b2">Innovations</a>
+                    <a href="./innovations.html" class="header-button" id="b2">Innovations</a>
                     <a href="./reseau.html" class="header-button" id="b3">Réseau</a>
                     <a href="./enlist.html" class="header-button" id="b4">Nous soutenir</a>
                 </nav>
             </div>
+            <input type="text" id="globalSearch" placeholder="Rechercher..." />
+            <div id="globalSearchResults"></div>
         </header>
+        <!-- Barre de recherche -->
+            <script type="text/javascript" src="../js/searchbar.js"></script>
         <main>
             <style>
                 #section-network{
@@ -74,6 +78,24 @@
         </main>
         <script type="text/javascript" src="../js/network.js"></script>
         <script type="text/javascript" src="../js/alerts.js"></script>
+        <script>
+            window.addEventListener('DOMContentLoaded', () => {
+                const hash = decodeURIComponent(window.location.hash.substring(1));
+                if (!hash) return;
+
+                // Trouver l'élément avec id = hash
+                const target = document.getElementById(hash);
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+                    // Surbrillance temporaire
+                    target.style.backgroundColor = "#fffa8b";
+                    setTimeout(() => {
+                        target.style.backgroundColor = "";
+                    }, 3000);
+                }
+            });
+        </script>
     </body>
     <footer>
         <div>

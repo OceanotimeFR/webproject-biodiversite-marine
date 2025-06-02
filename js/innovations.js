@@ -30,6 +30,8 @@ function fetchJSON() {
 
                 const blockLink = document.createElement("a");
                 blockLink.href = `./innovations/${innovation.Nom}.html`;
+                blockLink.target = "_blank"; 
+                blockLink.rel = "noopener noreferrer"; 
                 blockLink.style.textDecoration = "none";
                 blockLink.style.color = "var(--main-txt-color)";
 
@@ -113,7 +115,7 @@ function explainInnovations(page) {
 
 
     const divLogo = document.createElement("img");
-    divLogo.src = `${basePath}.png`
+    divLogo.src = `${basePath}.png`;
     if(nomPage_treated == "Plastic2Oil"){
         divLogo.style.backgroundColor = "rgb(21, 100, 57)";
     }
@@ -123,8 +125,24 @@ function explainInnovations(page) {
     divLogo.style.marginBottom="0";
     divLogo.style.zIndex = "100";
 
+    const blockImgLink = document.createElement("a");
+    const linkMap = {
+        "Global Fishing Watch": "https://globalfishingwatch.org",
+        "Ocean Farm 1": "https://www.salmar.no/en/front-page/",
+        "Plastic2Oil": "https://www.plastic2oil.com/site/home",
+        "Bioplastiques a base d'algues": "https://www.algopack.com/en/",
+        "The Ocean Cleanup": "https://theoceancleanup.com",
+        "Reef Restoration Foundation": "https://rrf.org.au"
+    };
 
-    divPage.appendChild(divLogo);
+    const link = linkMap[nomPage_treated] || "#";
+    blockImgLink.href = link;
+    blockImgLink.target = "_blank"; 
+    blockImgLink.rel = "noopener noreferrer"; 
+
+    blockImgLink.appendChild(divLogo);
+
+    divPage.appendChild(blockImgLink);
     divPage.appendChild(divP1);
     divPage.appendChild(divP3);
     divPage.appendChild(divP5);

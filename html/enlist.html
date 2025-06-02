@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>AquaSphere - Accueil</title>
+        <title>AquaSphere - Nous soutenir</title>
         <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../css/style.css"/>
         <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
@@ -18,12 +18,16 @@
                 <nav>
                     <a href="./accueil.html" class="header-button" id="b0">Accueil</a>
                     <a href="./carte.html" class="header-button" id="b1">Carte</a>
-                    <a href="./annuaire.html" class="header-button" id="b2">Innovations</a>
+                    <a href="./innovations.html" class="header-button" id="b2">Innovations</a>
                     <a href="./reseau.html" class="header-button" id="b3">Réseau</a>
                     <a href="./enlist.html" class="header-button" id="b4">Nous soutenir</a>
                 </nav>
             </div>
+            <input type="text" id="globalSearch" placeholder="Rechercher..." />
+            <div id="globalSearchResults"></div>
         </header>
+        <!-- Barre de recherche -->
+        <script type="text/javascript" src="../js/searchbar.js"></script>
         <main>
             <style>
                 fieldset {
@@ -31,6 +35,12 @@
                     border: none;
                     border-left: 6px solid var(--main-txt-color);
                     border-right: 6px solid var(--main-txt-color);
+                    border-radius: 6px;
+                }
+                footer{
+                    display: block;
+                    flex-direction: column;
+                    min-height: 100vh;
                 }
                 fieldset legend {
                     font-size:25px;
@@ -64,9 +74,12 @@
                     width: 15px;
                     height: 15px;
                 }
+                fieldset legend{
+                    padding: 1%;
+                }
             </style>
             <fieldset>
-                <legend>Vos informations</legend>
+                <legend>Inscrivez-vous dès maintenant !</legend>
                 <section class="survey">
                     <div>
                         <label>Nom :</label>
@@ -82,20 +95,65 @@
                     </div>
                     <div>
                         <label>Souhaitez-vous être recontacté ? :</label>
-                        <input type="checkbox" name="contact" required/>
+                        <input type="checkbox" id="contact" required/>
                         <span class="checkmark"></span>
                     </div>
                     <div>
                         <label>Souhaitez-vous faire une donation ?</label>
-                        <input type="checkbox" name="don" required/>
+                        <input type="checkbox" id="don" required/>
                         <span class="checkmark"></span>
                     </div>
-                    
-                    <button type="submit" id="submitButton">Envoyer</button>
+                    <label id="amountDisp">Montant : <input id="amountDisplay"> €</label><br>
+                        
+                    <button type="submit" id="submitButton">Merci ! </button>
+                    <style>
+                        #amountDisp{
+                            opacity: 0;
+                        }
+                        #submitButton{
+                            margin-top: 2rem;
+                        }
+                        #amountDisplay{
+                            width:50px;
+                        }
+                    </style>
+                    <script>
+                        const chkdButton = document.getElementById("don");
+                        const amountDsp = document.getElementById("amountDisp");
 
+                        function updateAmountDisplay() {
+                            if (chkdButton.checked) {
+                                amountDsp.style.opacity = '1';
+                            } else {
+                                amountDsp.style.opacity = '0';
+                            }
+                        }
+
+                        updateAmountDisplay();
+
+                        chkdButton.addEventListener('change', updateAmountDisplay);
+                    </script>
                 </section>
             </fieldset>
         </main>
+        <script>
+            window.addEventListener('DOMContentLoaded', () => {
+                const hash = decodeURIComponent(window.location.hash.substring(1));
+                if (!hash) return;
+
+                // Trouver l'élément avec id = hash
+                const target = document.getElementById(hash);
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+                    // Surbrillance temporaire
+                    target.style.backgroundColor = "#fffa8b";
+                    setTimeout(() => {
+                        target.style.backgroundColor = "";
+                    }, 3000);
+                }
+            });
+        </script>
     </body>
     <footer>
         <div>

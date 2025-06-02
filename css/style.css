@@ -23,6 +23,9 @@
         text-align: center;
         color:var(--main-txt-color)
     }
+    main{
+        flex:1;
+    }
 
 
 /* Header | Footer */
@@ -31,7 +34,7 @@
         padding: 1rem 0;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         position: relative;
-        z-index: 100;
+        z-index: 1100;
     }
     header{
         padding-top: 5rem;
@@ -93,12 +96,56 @@
         text-decoration: none;
         flex:1;
     }
+    footer{
+        display: block;
+        flex-direction: column;
+        min-height: 100vh;
+    }
 
     footer a:hover{
         text-decoration: underline;
         font-weight:bolder;
     }
+/* Barre de recherche */
 
+    #globalSearch {
+        margin-top: 2rem;
+        padding: 8px 12px;
+        font-size: 1rem;
+        width: 300px;
+        margin-bottom: 1rem;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        position: flex;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 1100;
+    }
+    #globalSearchResults {
+        position: absolute;
+        background: white;
+        border: 0px solid #ddd;
+        border-radius: 10px;
+        margin-top: 5px;
+        width: 500px;
+        max-height: 200px;
+        overflow-y: auto;
+        display:inline;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);;
+        
+    }
+    #globalSearchResults div {
+        padding: 5px 10px;
+        border-bottom: 1px solid #eee;
+        z-index: 1100;
+    }
+    #globalSearchResults div:hover {
+        background: #f0f0f0;
+        z-index: 1100;
+    }
 
 /* Carrousel page accueil */
     .carousel{

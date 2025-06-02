@@ -17,6 +17,6 @@ document.querySelectorAll('input[name="slide"]').forEach((input, index) => {
   input.addEventListener('change', () => {
     currentSlide = index + 1;
     clearInterval(interval); 
-    interval = setInterval(nextSlide, 5000); 
+    interval = setInterval(nextSlide, 5000);
   });
 });
